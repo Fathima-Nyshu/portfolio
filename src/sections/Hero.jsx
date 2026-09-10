@@ -19,7 +19,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-sand leading-tight whitespace-nowrap"
+            className="font-serif text-3xl sm:text-5xl md:text-6xl font-bold text-sand leading-tight"
           >
             Fathima Haris
           </motion.h1>

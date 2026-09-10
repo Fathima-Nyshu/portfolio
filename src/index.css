@@ -11,6 +11,7 @@
   --color-ochre-dark: #A6741F;
 }
 
-body {
+html, body {
+  overflow-x: hidden;
   font-family: var(--font-sans);
 }
