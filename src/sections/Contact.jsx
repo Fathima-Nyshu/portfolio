@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const links = [
-  { label: 'Resume', value: 'View / Download', href: '#', external: false },
+ { label: 'Resume', value: 'View / Download', href: '/resume.pdf', external: true },
   { label: 'Email', value: 'fathimannhl5@gmail.com', href: 'mailto:fathimannhl5@gmail.com', external: false },
   { label: 'LinkedIn', value: 'linkedin.com/in/fathimanyshu-dev', href: 'https://linkedin.com/in/fathimanyshu-dev', external: true },
   { label: 'GitHub', value: 'github.com/Fathima-Nyshu', href: 'https://github.com/Fathima-Nyshu', external: true },
