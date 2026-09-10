@@ -43,7 +43,7 @@ function Contact() {
           Open to internship opportunities and interesting problems to solve.
         </motion.p>
 
-        <div className="pl-6 md:pl-10">
+        <div className="pl-4 sm:pl-6 md:pl-10">
           {links.map((link, i) => (
             <motion.div
               key={link.label}
@@ -57,22 +57,22 @@ function Contact() {
                 className="absolute bottom-0 border-b border-wine/30"
                 style={{
                   transform: 'rotate(' + tilt + ')',
-                  left: (-(i + 1) * 24) + 'px',
-                  right: (i * 6) + 'px',
+                  left: (-(i + 1) * 2.2) + 'vw',
+                  right: (i * 0.6) + 'vw',
                 }}
               ></div>
               <a
                 href={link.href}
                 target={link.external ? '_blank' : undefined}
                 rel={link.external ? 'noopener noreferrer' : undefined}
-                className="flex items-center justify-between transition-all duration-300 group-hover:-translate-x-3"
+                className="flex items-center justify-between gap-4 transition-all duration-300 group-hover:-translate-x-3"
               >
-                <span className="font-mono text-xs italic text-wine/60 uppercase tracking-widest group-hover:text-wine transition-colors">
-                  {link.label}
-                </span>
-                <span className="font-mono text-lg md:text-2xl italic text-wine font-semibold group-hover:text-sand transition-colors">
-                  {link.value}
-                </span>
+                <span className="shrink-0 font-mono text-xs italic text-wine/60 uppercase tracking-widest group-hover:text-wine transition-colors">
+  {link.label}
+</span>
+<span className="min-w-0 break-all text-right font-mono text-base sm:text-lg md:text-2xl italic text-wine font-semibold group-hover:text-sand transition-colors">
+  {link.value}
+</span>
               </a>
             </motion.div>
           ))}
